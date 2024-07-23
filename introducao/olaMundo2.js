@@ -1,0 +1,6 @@
+let prompt = require('prompt-sync')
+prompt=prompt({sigint:true})
+console.log('Olá Mundo!!!')
+let nome = prompt('Qual é o seu nome?: ')
+console.log(`Olá ${nome}\n`)
+console.log("Olá Turma 36")
