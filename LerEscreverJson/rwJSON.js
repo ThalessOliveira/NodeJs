@@ -1,4 +1,6 @@
-const fs = require('fs')
+//const fs = require('fs')
+import fs from 'fs'
+
 const rwJSON = {
     lerJSON: (arquivo)=>{
         //Lê arquivos de texto de forma síncrona
@@ -22,4 +24,7 @@ const rwJSON = {
     }
 }
 
-module.exports = rwJSON
+
+export default rwJSON  //jeito novo
+
+//module.exports = rwJSON

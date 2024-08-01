@@ -1,11 +1,20 @@
-const express = require('express')
-const path = require('path')
-const rwJSON = require('./rwJSON')
+//const express = require('express')  //Usando require para importar bibliotecas
+//const path = require('path')
+//const rwJSON = require('./rwJSON')
 
-const app = express()
+import express from 'express'
+import rwJSON from './rwJSON.js';
 const PORTA = '3000'
-const baseDIR = pathjoin(__dirname, 'templates')
+const app = express()
 const cadastro = 'pessoas.json'
+
+
+
+import path from 'path'                             //importando o Path com 'import'
+import { fileURLToPath } from 'url';                //
+const __filename = fileURLToPath(import.meta.url)   //
+const __dirname = path.dirname(__filename)          //
+const baseDIR = path.join(__dirname, 'templates')   //
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())

@@ -4,5 +4,11 @@
         "cpf": "520.769.878-86",
         "servico": "Desenvolvedor Freelancer",
         "AnosExperiência": "3 Anos"
-    }    
+    },
+    {
+        "nome": "Thales",
+        "cpf": "520.769.878-86",
+        "servico": "Programador",
+        "Experiência": "5 anos"
+    }
 ]
